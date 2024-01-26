@@ -1,0 +1,12 @@
+@import "../src/styles/globals.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1080px;
+    margin: auto;
+    background-color: $color-background;
+}

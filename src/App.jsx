@@ -8,11 +8,11 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header />
       <Main>
         <AppRouter />
       </Main>
-      <Footer></Footer>
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,17 @@
+@import "../../../styles/globals.scss";
+
+.wrapper {
+    padding: 0 40px;
+    background-color: $color-white;
+    .logo {
+        font-family: $Logo-font;
+        font-size: $Logo-size;
+        font-weight: $Logo-weight;
+        height: $Logo-line-spacing;
+        color: $color-text-main2;
+        text-transform: uppercase;
+    }
+    i {
+
+    }
+}
