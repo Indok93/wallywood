@@ -1,0 +1,51 @@
+@import "../../styles/globals.scss";
+
+.headingOne {
+    font-family: $h1-home-font;
+    font-size: $h1-home-size;
+    font-weight: $h1-home-weight;
+    color: $color-text-main2;
+
+}
+.randomPoster {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+    .itemWrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            width: 100%;
+        }
+        .items {
+            position: relative;
+            margin: 0 1em;
+            h2 {
+                font-family: $h2-home-font;
+                font-size: $h2-home-size;
+                font-weight: $h2-home-weight;
+                color: $color-text-main;
+            }
+            .description {
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+            }
+            .genre {
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+                position: absolute;
+                bottom: 2em;
+                left: 0;
+            }
+            .readMoreButton {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

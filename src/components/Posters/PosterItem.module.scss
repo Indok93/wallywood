@@ -1,0 +1,37 @@
+@import "../../styles/globals.scss";
+
+.wrapper {
+    text-align: center;
+    padding: 0 25px;
+    img {
+        width: 194px;
+        height: 254px;
+        border-radius: 5px;
+    }
+    h3 {
+        font-family: $text-posters-heading-font;
+        font-size: $text-posters-heading-size;
+        font-weight: 600;
+        color: $color-text-main;
+        
+    }
+    p {
+        font-family: $text-home-font;
+        font-size: $text-home-size;
+        font-weight: $text-home-weight;
+        color: $color-text-main;
+        padding: 0.5em 0;
+
+    }
+    button {
+        font-family: $button-home-text-font;
+        font-size: $button-home-text-size;
+        font-weight: $button-home-text-weight;
+        color: $color-text-main;
+        border: 1px solid $color-text-main;
+        border-radius: 3px;
+        background-color: $color-border-aside;
+        padding: 0.2em 1em;
+        margin-bottom: 2em;
+    }
+}

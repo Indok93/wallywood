@@ -1,9 +1,12 @@
-import { ContentWrapper } from "../../components/ContentWrapper/ContentWrapper"
+import { RandomPosters } from "../../components/Posters/RandomPosters"
+import curtain from "../../assets/Images/curtain.jpg";
+import styles from "../Home/Home.module.scss";
 
 export const Home = () => {
   return (
-    <ContentWrapper title="Forside">
-        Velkommen til min side
-    </ContentWrapper>
+    <div className={styles.wrapper}>
+        <img src={curtain} alt={curtain} />
+        <RandomPosters />
+    </div>
   )
 }

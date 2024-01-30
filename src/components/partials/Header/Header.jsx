@@ -6,7 +6,7 @@ export const Header = () => {
     <header className={styles.wrapper}>
       <div className={styles.logo}>wallywood</div>
       <Navbar></Navbar>
-      <i>sd</i>
+      <i className="fa-solid fa-basket-shopping"></i>
     </header>
   )
 }

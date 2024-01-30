@@ -1,0 +1,14 @@
+@import "../../styles/globals.scss";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+h2 {
+    color: $color-text-main2;
+    font-family: $h1-home-font;
+    font-size: $h1-home-size;
+    font-weight: $h1-home-weight;
+    padding: 0.5em 0;
+}

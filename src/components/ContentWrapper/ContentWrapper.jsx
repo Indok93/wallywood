@@ -1,3 +1,4 @@
+import "../../styles/globals.scss";
 
 export const ContentWrapper = ({title, children}) => {
   return (

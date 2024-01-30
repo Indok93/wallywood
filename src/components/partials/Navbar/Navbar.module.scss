@@ -1,0 +1,52 @@
+@import "../../../styles/globals.scss";
+
+.navheader {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: end;
+    padding-bottom: 1em;
+    border-bottom: solid 2px $color-background;
+    ul {
+        
+        li {
+            display: inline;
+            list-style-type: none;
+            padding-left: 1em;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $Nav-font;
+                color: $color-text-main;
+                font-size: $Nav-size;
+                font-weight: $Nav-weight;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .navheader {
+        display: block;
+        text-align: center;
+        align-items: end;
+        padding-bottom: 0;
+        border-bottom: none;
+        ul {
+            
+            li {
+                display: block;
+                list-style-type: none;
+                padding-left: 0;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: $Nav-font;
+                    color: $color-text-main;
+                    font-size: $Nav-size;
+                    font-weight: $Nav-weight;
+                }
+            }
+        }
+    }
+}

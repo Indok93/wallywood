@@ -1,0 +1,51 @@
+@import "../../styles/globals.scss";
+
+.wrapper {
+    border-right: solid 1px $color-border-aside;
+    margin-bottom: 2em;
+    nav {
+        h2 {
+            font-family: $h2-home-font;
+            font-size: $h2-home-size;
+            font-weight: $h2-home-weight;
+            color: $color-text-main;
+            margin-bottom: 1em;
+        }
+        p {
+            font-family: $text-posters-font;
+            font-size: $text-posters-size;
+            font-weight: $text-posters-weight;
+            color: $color-text-main;
+        }
+        ul {
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: $color-text-main2;
+                    font-family: $nav-aside-font;
+                    font-size: $nav-aside-size;
+                    font-weight: $nav-aside-weight;
+
+                    &:focus {
+                        color: $color-background;
+
+                        &::before {
+                            content: "\27A4";
+                            margin-right: 0.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prices {
+        p {
+            font-family: $text-posters-font;
+            font-size: $text-posters-size;
+            font-weight: $text-posters-weight;
+            text-transform: capitalize;
+            color: $color-text-main;
+        }
+    }
+}

@@ -1,17 +1,42 @@
 @import "../../../styles/globals.scss";
 
 .wrapper {
+    display: flex;
     padding: 0 40px;
+    padding-top: 0.5em;
     background-color: $color-white;
+    position: relative;
     .logo {
         font-family: $Logo-font;
         font-size: $Logo-size;
         font-weight: $Logo-weight;
-        height: $Logo-line-spacing;
         color: $color-text-main2;
         text-transform: uppercase;
+        border-bottom: solid 2px $color-background;
     }
     i {
+        position: absolute;
+        top: 0.5em;
+        right: 2.5em;
+        cursor: pointer;
+    }
+}
 
+@media (max-width: 800px) {
+    .wrapper {
+        display: block;
+
+        .logo {
+            font-size: $Logo-size;
+            border-bottom: none;
+            text-align: center;
+            border-bottom: solid 2px $color-background;
+        }
+        i {
+            display: block;
+            position: static;
+            text-align: center;
+            border-bottom: solid 2px $color-text-main;
+        }
     }
 }

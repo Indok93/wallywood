@@ -1,0 +1,50 @@
+@import "../../../styles/globals.scss";
+
+.wrapper {
+    background-color: $color-white;
+    padding: 0 40px;
+
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-top: solid 2px $color-border-aside;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        position: relative;
+
+        .footerDivOne {
+            h3 {
+                font-family: $h3-font;
+                font-size: $h3-size;
+                font-weight: $h3-weight;
+                text-transform: uppercase;
+                color: $color-text-main2;
+            }
+            p {
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+            }
+        }
+        .footerDivTwo {
+            margin-top: 0.5em;
+            p {
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+            }
+        }
+        .footerDivFour {
+            position: absolute;
+            right: 0;
+            top: 0.5em;
+            .icon {
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+                color: $color-grey-light;
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
