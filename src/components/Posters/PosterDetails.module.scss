@@ -1,0 +1,74 @@
+@import "../../styles/globals.scss";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    .imgWrapper {
+        padding: 0 2em;
+        img {
+            width: 100%;
+        }
+    }
+    .contents {
+        color: $color-text-main;
+        h3 {
+            font-family: $h2-home-font;
+            font-size: $h2-home-size;
+            font-weight: $h2-home-weight;
+            color: $color-text-main;
+            margin-bottom: 1em;
+        }
+        .description {
+            font-family: $text-home-font;
+            font-size: $text-home-size;
+            font-weight: $text-home-weight;
+            margin-bottom: 0.5em;
+        }
+        .size {
+            font-family: $text-home-font;
+            font-size: $text-home-size;
+            font-weight: $text-home-weight;
+            margin-bottom: 0.5em;
+        }
+        .id {
+            font-family: $text-home-font;
+            font-size: $text-home-size;
+            font-weight: $text-home-weight;
+            margin-bottom: 0.5em;
+        }
+        .price {
+            font-family: $h3-font;
+            font-size: $h3-size;
+            font-weight: $h3-weight;
+            margin-bottom: 1em;
+            color: $color-text-main;
+        }
+        .bottomContents {
+            display: flex;
+            input {
+                text-align: center;
+                width: 20px;
+                padding: 5px 10px;
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+            }
+            button {
+                padding: 0 10px;
+                margin-left: 1em;
+                border: 1px solid $color-text-main;
+                border-radius: 3px;
+                background-color: $color-border-aside;
+            }
+            p {
+                font-family: $text-home-font;
+                font-size: $text-home-size;
+                font-weight: $text-home-weight;
+                color: #006600;
+            }
+            & > :nth-child(3) {
+                margin-left: auto;
+              }
+        }
+    }
+}
