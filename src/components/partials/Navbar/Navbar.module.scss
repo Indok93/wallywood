@@ -20,6 +20,10 @@
                 color: $color-text-main;
                 font-size: $Nav-size;
                 font-weight: $Nav-weight;
+
+                &:focus {
+                    color: $color-text-main2;
+                }
             }
         }
     }

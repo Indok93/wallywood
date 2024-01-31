@@ -7,7 +7,7 @@
     color: $color-text-main2;
 
 }
-.randomPoster {
+.randomPosters {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -42,6 +42,7 @@
                 left: 0;
             }
             .readMoreButton {
+                text-decoration: none;
                 position: absolute;
                 bottom: 0;
                 left: 0;

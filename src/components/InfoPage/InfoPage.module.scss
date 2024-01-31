@@ -1,0 +1,21 @@
+@import "../../styles/globals.scss";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3em;
+    padding-bottom: 10em;
+    article {
+
+        p {
+            margin-bottom: 1em;
+            font-family: $text-home-font;
+            font-size: $text-home-size;
+            font-weight: $text-home-weight;
+        }
+    }
+    img {
+        width: 335px;
+        height: 335px;
+    }
+}

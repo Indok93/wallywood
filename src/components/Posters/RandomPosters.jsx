@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "../Posters/RandomPosters.module.scss";
+import { Link } from "react-router-dom";
 
 const truncateText = (text, maxLength) => {
   if (text.length <= maxLength) {
@@ -28,7 +29,7 @@ export const RandomPosters = () => {
   return (
     <div>
         <h1 className={styles.headingOne}>Sidste nyt...</h1>
-        <div className={styles.randomPoster}>
+        <div className={styles.randomPosters}>
             {apiData && apiData.map(item => {
                 return (
                     <div key={item.id} className={styles.itemWrapper}>
@@ -37,7 +38,7 @@ export const RandomPosters = () => {
                           <h2>{item.name}</h2>
                           <p className={styles.description} dangerouslySetInnerHTML={{__html: truncateText(item.description, maxLength)}}></p>
                           <p className={styles.genre}>{item.genres[0].title}</p>
-                          <button type="button" className={styles.readMoreButton}>Læs mere &raquo;</button>
+                          <Link className={styles.readMoreButton}>Læs mere &raquo;</Link>
                         </div>
                     </div>
                 )
