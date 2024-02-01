@@ -49,3 +49,34 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .wrapper {
+        border-right: none;
+        border-bottom: 2px solid $color-text-main2;
+        nav {
+            text-align: center;
+            p {
+                font-size: 1.1em;
+                margin-bottom: 0.1em;
+                text-decoration: underline;
+            }
+            ul {
+                li {
+                    a {
+                        font-size: 1em;
+    
+                        &:hover {
+                            color: $color-text-main;
+                        }
+                    }
+                }
+            }
+        }
+        .prices {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

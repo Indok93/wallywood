@@ -35,7 +35,7 @@ export const FormLogin = () => {
           <div>
             <label htmlFor="">Adgangskode:</label>
             <input type="password" id="password" {...register('password', {required: true})} />
-            {errors.password && <span>Password skal udfyldes!</span>}
+            {errors.password && <span>Adgangskode skal udfyldes!</span>}
           </div>
           <div>
             <button>

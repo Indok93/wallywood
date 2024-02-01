@@ -35,3 +35,10 @@
         margin-bottom: 2em;
     }
 }
+
+@media (max-width: 800px) {
+    .wrapper {
+        text-align: center;
+        padding: 0 10px;
+    }
+}

@@ -50,3 +50,45 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .headingOne {
+        text-align: center;
+    }
+    .randomPosters {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    
+        .itemWrapper {
+            grid-template-columns: 1fr;
+            border: 3px solid $color-text-main2;
+            border-radius: 10px;
+            background-color: $color-background;
+    
+            img {
+                padding: 2em;
+                aspect-ratio: 1/2;
+                box-sizing: border-box;
+            }
+            .items {
+                position: static;
+                margin: 1em 2em;
+                h2 {
+                    color: $color-text-main2;
+                }
+                .description {
+                    color: $color-white2;
+                }
+                .genre {
+                    position: static;
+                    color: $color-white2;
+                }
+                .readMoreButton {
+                    position: static;
+                    text-align: center;
+                    color: $color-grey-light;
+                }
+            }
+        }
+    }    
+}

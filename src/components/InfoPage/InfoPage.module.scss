@@ -19,3 +19,19 @@
         height: 335px;
     }
 }
+
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding-bottom: 2em;
+        article {
+            p {
+                font-size: 1em;
+            }
+        }
+        img {
+            margin: auto;
+        }
+    }
+}

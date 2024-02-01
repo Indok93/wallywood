@@ -56,3 +56,16 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .formWrapper {
+        form {
+            div {
+                text-align: center;
+                button {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}

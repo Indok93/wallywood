@@ -12,3 +12,14 @@ h2 {
     font-weight: $h1-home-weight;
     padding: 0.5em 0;
 }
+
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 0.5em 0;
+    }    
+}

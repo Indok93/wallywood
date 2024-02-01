@@ -33,22 +33,29 @@
     .navheader {
         display: block;
         text-align: center;
-        align-items: end;
         padding-bottom: 0;
         border-bottom: none;
         ul {
             
             li {
                 display: block;
-                list-style-type: none;
                 padding-left: 0;
+                margin: 1em 0;
                 a {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-family: $Nav-font;
-                    color: $color-text-main;
-                    font-size: $Nav-size;
-                    font-weight: $Nav-weight;
+                    text-transform: capitalize;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    background-color: $color-text-main2;
+                    color: $color-white2;
+                    border-radius: 25px;
+                    padding: 0.2em 1em;
+                    &:hover {
+                        background-color: $color-text-main;
+                        color: $color-white2;
+                    }
+                    &:focus {
+                        color: $color-white2;
+                    }
                 }
             }
         }
