@@ -1,0 +1,76 @@
+@import "../../styles/globals.scss";
+
+form {
+    div {
+        label {
+            display: block;
+            font-family: $text-home-font;
+            font-size: $text-home-size;
+            font-weight: $text-home-weight;
+        }
+        input[type='text'] {
+            font-size: 1em;
+            width: 400px;
+            padding: 15px 5px;
+            border: none;
+            border-top: 1px solid $color-text-main2;
+            
+        }
+        input[type='password'] {
+            font-size: 1em;
+            width: 400px;
+            padding: 15px 5px;
+            border: none;
+            border-top: 1px solid $color-text-main2;
+        }
+        span {
+            color: red;
+            margin-left: 1em;
+        }
+        button {
+            cursor: pointer;
+            font-family: $button-home-text-font;
+            font-size: $button-home-text-size;
+            font-weight: $button-home-text-weight;
+            padding: 6px 20px;
+            background-color: $color-border-aside;
+            border-radius: 3px;
+            color: $color-text-main;
+            margin: 1em 0;
+            margin-bottom: 20em;
+
+            &:hover {
+                background-color: $color-background;
+                color: $color-grey-light;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.wrapper {
+    text-align: center;
+    h2 {
+        strong {
+            color: rgb(17, 181, 17);
+        }
+    }
+    button {
+        cursor: pointer;
+        font-family: $button-home-text-font;
+        font-size: $button-home-text-size;
+        font-weight: $button-home-text-weight;
+        padding: 6px 20px;
+        background-color: $color-border-aside;
+        border-radius: 3px;
+        color: $color-text-main;
+        margin: 1em 0;
+        margin-bottom: 20em;
+
+        &:hover {
+            background-color: $color-background;
+            color: $color-grey-light;
+            opacity: 0.5;
+        }
+    }
+}

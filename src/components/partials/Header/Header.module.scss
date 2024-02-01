@@ -20,6 +20,13 @@
         right: 2.5em;
         cursor: pointer;
     }
+    .login {
+        position: absolute;
+        top: 0.5em;
+        right: 5em;
+        color: $color-text-main2;
+        font-family: $Logo-font;
+    }
 }
 
 @media (max-width: 800px) {
@@ -30,13 +37,19 @@
             font-size: $Logo-size;
             border-bottom: none;
             text-align: center;
-            border-bottom: solid 2px $color-background;
+            border-bottom: none;
         }
         i {
             display: block;
             position: static;
             text-align: center;
             border-bottom: solid 2px $color-text-main;
+        }
+        .login {
+            text-align: center;
+            position: static;
+            color: $color-text-main2;
+            font-family: $Logo-font;
         }
     }
 }
